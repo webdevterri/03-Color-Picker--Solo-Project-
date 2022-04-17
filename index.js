@@ -40,6 +40,7 @@ btnColor.addEventListener("click", function () {
         const target = document.getElementById(`hexcode${i}`);
         target.addEventListener("click", myFunction);
 
+        // myFunction() is the copy to clipboard functionality
         function myFunction() {
           /* Get the text field */
           const copyText = document.getElementById(`hexcode${i}`);
@@ -57,3 +58,5 @@ btnColor.addEventListener("click", function () {
       }
     });
 });
+
+// Note: Change the alert() in line 56 to be a modal instead that disappears after 5 seconds. The alert causes problems after a few uses.
