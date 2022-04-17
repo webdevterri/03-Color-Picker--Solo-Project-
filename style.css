@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #1c1c1c;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #1f2937;
+  color: #d5d4d8;
+  height: 100%;
+  width: 100%;
+}
+
+/* COLOR SELECTION FILTERS */
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 60px;
+  padding: 25px 5px;
+  justify-content: space-between;
+  align-items: center;
+
+  /* background-color: red; */
+}
+
+#colorpicker {
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#colormode {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  background-color: #1f293a;
+  color: #d5d4d8;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.btn-get {
+  background-color: #3d4b60;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.75rem;
+  width: 125px;
+  height: 40px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.btn-get:hover {
+  background-color: #242d3a;
+  border: 1px solid #fff;
+}
+
+/* COLOR BARS */
+
+.colors {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.color-block {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 20%;
+}
+
+/* #hexcode01 {
+  
+}
+#hexcode02 {
+  
+}
+#hexcode03 {
+  
+}
+#hexcode04 {
+  
+}
+#hexcode05 {
+  
+} */
+
+/* COLOR HEXCODE LABELS */
+.hexcodes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  /* font-size: 0.75rem; */
+  /* background-color: red; */
+}
+
+.hexmeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  font-size: 0.75rem;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#hexonly {
+  margin-bottom: 0;
+}
+
+@media (min-width: 450px) {
+  #colormode {
+    width: 250px;
+  }
+}
+
+@media (min-width: 500px) {
+  #colormode {
+    width: 300px;
+  }
+}
+
+@media (min-width: 600px) {
+  .content {
+    height: 550px;
+    width: 550px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.904);
+  }
+
+  .topbar {
+    padding: 25px 15px;
+  }
+
+  #colormode {
+    width: 300px;
+  }
+}
+
+/* 
+  add click to copy to clipboard functionality
+  https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
+*/

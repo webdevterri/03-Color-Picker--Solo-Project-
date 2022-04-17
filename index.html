@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Picker App</title>
+  </head>
+  <body>
+    <div class="content">
+      <!-- COLOR SELECTION FILTERS -->
+      <div class="topbar">
+        <!-- "seed color" -->
+        <input type="color" name="colorpicker" id="colorpicker" />
+
+        <select name="colormode" id="colormode">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+
+        <button type="submit" class="btn-get" id="btnGetColor">
+          Get color scheme
+        </button>
+      </div>
+      <!-- COLOR BARS -->
+      <!-- is this section empty to begin with or? -->
+      <div class="colors">
+        <div class="color-block" id="color0"></div>
+        <div class="color-block" id="color1"></div>
+        <div class="color-block" id="color2"></div>
+        <div class="color-block" id="color3"></div>
+        <div class="color-block" id="color4"></div>
+      </div>
+      <!-- COLOR HEXCODE LABELS  -->
+      <div class="hexcodes">
+        <div class="hexmeta" id="hexcode0"></div>
+        <div class="hexmeta" id="hexcode1"></div>
+        <div class="hexmeta" id="hexcode2"></div>
+        <div class="hexmeta" id="hexcode3"></div>
+        <div class="hexmeta" id="hexcode4"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
