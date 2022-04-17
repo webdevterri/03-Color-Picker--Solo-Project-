@@ -8,6 +8,7 @@ body {
   background-color: #1c1c1c;
   height: 100vh;
   width: 100vw;
+  position: relative;
 }
 
 .content {
@@ -134,17 +135,19 @@ body {
 
 .modal {
   display: none;
+  justify-content: center;
   position: fixed;
   z-index: 100;
-  width: 400px;
-  height: 300px;
-  margin: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 200px;
+  height: 100px;
+  margin: 25vh 30vw;
+  background-color: rgba(0, 0, 0, 0.3);
   }
   
   .modalText {
   color: #FFFFFF;
-  text-align: center;
+  display: flex;
+  align-self: center;
   }
 
 
@@ -173,6 +176,18 @@ body {
 
   #colormode {
     width: 300px;
+  }
+}
+
+@media (min-width: 700px) {
+  .modal {
+    margin: 30vh 35vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  .modal {
+    margin: 30vh 42vw;
   }
 }
 

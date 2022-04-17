@@ -52,18 +52,26 @@ btnColor.addEventListener("click", function () {
           // Copy the text inside the text field
           navigator.clipboard.writeText(`${hexonly}`);
 
-          // Alert the copied text
+          // Alert the copied text (if you want to change it back from modal uncomment the line below)
           // alert("Copied: " + hexonly);
 
           // Modal (instead of alert)
-          document.querySelector('.modal').style.display = "block";
+          document.querySelector('.modal').style.display = "flex";
 
           document.getElementById('modalPopup').innerHTML = `<div class="modalText">
-          <p>"Copied: " + ${hexonly}</p>
+          <p>Copied: ${hexonly}</p>
           </div>` 
+
+          modalClear();
+        }
+        // Modal disappears after 3 seconds
+        function modalClear(){
+          setTimeout(hideModal, 3000)
+          }
+
+        function hideModal(){
+          document.querySelector('.modal').style.display = "none";
         }
       }
     });
 });
-
-// Note: Change the alert() in line 56 to be a modal instead that disappears after 5 seconds. The alert causes problems after a few uses.
