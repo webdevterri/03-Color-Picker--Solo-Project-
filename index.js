@@ -49,11 +49,18 @@ btnColor.addEventListener("click", function () {
           const hexonly = copyText.innerHTML.slice(0, 7);
           // console.log(typeof hexonly);
 
-          /* Copy the text inside the text field */
+          // Copy the text inside the text field
           navigator.clipboard.writeText(`${hexonly}`);
 
-          /* Alert the copied text */
-          alert("Copied: " + hexonly);
+          // Alert the copied text
+          // alert("Copied: " + hexonly);
+
+          // Modal (instead of alert)
+          document.querySelector('.modal').style.display = "block";
+
+          document.getElementById('modalPopup').innerHTML = `<div class="modalText">
+          <p>"Copied: " + ${hexonly}</p>
+          </div>` 
         }
       }
     });

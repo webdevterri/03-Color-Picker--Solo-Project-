@@ -130,6 +130,24 @@ body {
   margin-bottom: 0;
 }
 
+/* MODAL */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modalText {
+  color: #FFFFFF;
+  text-align: center;
+  }
+
+
 @media (min-width: 450px) {
   #colormode {
     width: 250px;
