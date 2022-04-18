@@ -69,7 +69,7 @@ body {
 }
 
 /* COLOR BARS */
-
+/* Shorten height of colors */
 .colors {
   display: flex;
   flex-direction: row;
