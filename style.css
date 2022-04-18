@@ -31,26 +31,27 @@ body {
   padding: 25px 5px;
   justify-content: space-between;
   align-items: center;
+}
 
-  /* background-color: red; */
+#colorpicker,
+#colormode,
+.btn-get {
+  height: 40px;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 #colorpicker {
   width: 50px;
-  height: 40px;
-  cursor: pointer;
 }
 
 #colormode {
   width: 200px;
-  height: 40px;
   padding: 10px;
   background-color: #1f293a;
   color: #d5d4d8;
   border-radius: 6px;
   border: 1px solid #d1d5db;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-  cursor: pointer;
 }
 
 .btn-get {
@@ -60,9 +61,6 @@ body {
   color: #fff;
   font-size: 0.75rem;
   width: 125px;
-  height: 40px;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-  cursor: pointer;
 }
 
 .btn-get:hover {
@@ -111,8 +109,6 @@ body {
   width: 100%;
   padding-left: 5px;
   padding-right: 5px;
-  /* font-size: 0.75rem; */
-  /* background-color: red; */
 }
 
 .hexmeta {
@@ -142,6 +138,7 @@ body {
   height: 100px;
   margin: 25vh 30vw;
   background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
   }
   
   .modalText {
@@ -190,8 +187,3 @@ body {
     margin: 30vh 42vw;
   }
 }
-
-/* 
-  add click to copy to clipboard functionality
-  https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
-*/

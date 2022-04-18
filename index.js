@@ -52,10 +52,10 @@ btnColor.addEventListener("click", function () {
           // Copy the text inside the text field
           navigator.clipboard.writeText(`${hexonly}`);
 
-          // Alert the copied text (if you want to change it back from modal uncomment the line below)
+          // ALERT confirms the copied hexcode (if you want to change it back from MODAL, use this instead)
           // alert("Copied: " + hexonly);
 
-          // Modal (instead of alert)
+          // MODAL (instead of alert)
           document.querySelector('.modal').style.display = "flex";
 
           document.getElementById('modalPopup').innerHTML = `<div class="modalText">
